@@ -1,0 +1,105 @@
+{
+  "Header": {
+    "Logo-main": "Trend",
+    "Logo-sub": "Line",
+    "Home": "Home",
+    "About": "About",
+    "ContactUs": "Contact Us",
+    "Services": "Services",
+    "BusinessGallery": "Business Gallery"
+  },
+  "ad-banner": {
+    "Title": "🔥 Special Offer for New Clients!",
+    "Description": "Enjoy up to 50% OFF on our premium marketing services this month only.",
+    "Button": "Inquire about Ads"
+  },
+  "Contact": {
+    "Title": "Contact Us",
+    "Phone": "Phone",
+    "PhoneValue": "+968 77463736",
+    "Email": "Email",
+    "EmailValue": "trendline.oman@gmail.com",
+    "Address": "Address",
+    "Country": "Oman - Muscat - Al mabelah - Al bnok street"
+  },
+  "About": {
+    "Title": "About Us",
+    "Description1": " We are a company specializing in social media account management. We offer integrated solutions that help brands appear professional, attractive, and effective. ",
+    "Description2": " Our goal is to be the primary creative partner for your success in the digital world. ",
+    "Description3": " Digital excellence starts with the details ",
+    "OurVision": "OurVision",
+    "OurVisionDesc1": "To be the pioneers in providing content management services.",
+    "OurVisionDesc2": "Digitally, with high professionalism and renewed creativity, we make a difference.",
+    "OurVisionDesc3": "Tangible in the presence of our digital customers."
+  },
+  "Services": {
+    "Title": "Our Services",
+    "Service1": "Account Management",
+    "Service1Desc": "Comprehensive management of social media accounts, including content, publishing, engagement, and daily monitoring with periodic performance reports.",
+    "Service2": "Content & Design",
+    "Service2Desc": "Writing attractive content aligned with brand identity, designing professional posts and stories, and organizing bio and highlights.",
+    "Service3": "Photography & Editing",
+    "Service3Desc": "Professional photography for products, people, and locations, including aerial (drone) shots and creative short video editing.",
+    "Service4": "Strategy & Analysis",
+    "Service4Desc": "Building growth plans based on market and audience analysis to increase engagement, reach, and achieve digital goals.",
+    "Service5": "Advertising Campaigns",
+    "Service5Desc": "Preparing and executing targeted paid campaigns with precise analysis and continuous optimization to achieve the best ROI.",
+    "Service6": "App & Web Development",
+    "Service6Desc": "Custom development of responsive websites and mobile applications tailored to your business needs, secure coding."
+  },
+  "Footer": {
+    "Title1": "Contact Numbers",
+    "Title2": "Address",
+    "Title2Value": "Oman - Muscat - Al mabelah - Al bnok street",
+    "Title3": "Emails",
+    "Title3Value": "Click to send mail",
+    "SubTitle": "TrendLine All rights reserved 2025",
+    "SubTitleContact": "Contact Us",
+    "SubTitleServices": "Our Services",
+    "SubTitleAbout": "About Us"
+  },
+  "Home": {
+    "BrandName": "TrendLine",
+    "MainSecMainText": "Experts in the Field",
+    "MainSecMainText2": "of Digital Marketing",
+    "MainSecSubText": "We are a company specializing in social media account management. We offer integrated solutions that help brands appear professional, attractive, and effective.",
+    "MainSecButtonContact": "Contact Us",
+    "MainSecButtonRequest": "Request a Quote",
+    "OurMainSerSecTitle": "Our Main Services",
+    "Service1": "Content & Design Writing",
+    "Service2": "App & Web Development",
+    "Service3": "Account Management",
+    "WhyChooseUSSecTitle": "Why is Trendline your first choice as an advertising and publicity company?",
+    "WhyChooseUSReason1": "Specialized and creative team",
+    "WhyChooseUSReason2": "High quality at competitive prices",
+    "WhyChooseUSReason3": "Integrated services in one place",
+    "WhyChooseUSReason4": "Practical experience in managing successful accounts",
+    "PricingPlans": "Pricing Plans",
+    "PricingDesc": "Our affordable and flexible plans are launching soon!",
+    "PricingButton": "Request a Quote",
+    "WhatsappMessagePricingButton": "Hi, I would like to request a quote.",
+    "WhatsappMessageAdButton": "Hi, I would like to inquire about Ads.",
+    "CarouselCards": [
+      {
+        "title": "Debugging the Matrix",
+        "description": "Each bug is a glitch in the Matrix... and we’re here to fix it."
+      },
+      {
+        "title": "The Deployment",
+        "description": "We deploy greatness. CI/CD that ships on time, every time."
+      },
+      {
+        "title": "Creative Vision",
+        "description": "Design meets function. Your vision, deployed."
+      },
+      {
+        "title": "User Feedback",
+        "description": "Listen, learn, iterate — your users are talking."
+      },
+      {
+        "title": "Growth Hacking",
+        "description": "Scale your platform using clever code and caffeine."
+      }
+    ]
+  }
+}
