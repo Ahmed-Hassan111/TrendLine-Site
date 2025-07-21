@@ -1,59 +1,16 @@
-<div class="qr-container">
-  <div class="logo">
-    <span class="trend-line">TREND</span>
-    <span class="line">LINE</span>
+<div class="contact-container">
+  <div class="logo-circle">
+    <span class="logo-text">TREND<br /><small>LINE</small></span>
   </div>
-  <h2 class="title">Creative Solutions for Digital Growth</h2>
+
+  <h2 class="subtitle">Creative Solutions<br />for Digital Growth</h2>
+
   <div class="icon-grid">
-    <div class="icon-item">
-      <img
-        src="https://via.placeholder.com/50/405de6/ffffff?text=IG"
-        alt="Instagram"
-      />
-      <span>Instagram</span>
-    </div>
-    <div class="icon-item">
-      <img
-        src="https://via.placeholder.com/50/25d366/ffffff?text=WA"
-        alt="WhatsApp"
-      />
-      <span>WhatsApp</span>
-    </div>
-    <div class="icon-item">
-      <img
-        src="https://via.placeholder.com/50/000000/ffffff?text=TT"
-        alt="TikTok"
-      />
-      <span>TikTok</span>
-    </div>
-    <div class="icon-item">
-      <img
-        src="https://via.placeholder.com/50/2e3192/ffffff?text=Web"
-        alt="Website"
-      />
-      <span>Website</span>
-    </div>
-    <div class="icon-item">
-      <img
-        src="https://via.placeholder.com/50/4285f4/ffffff?text=GM"
-        alt="Google Maps"
-      />
-      <span>Google Maps</span>
-    </div>
-    <div class="icon-item">
-      <img
-        src="https://via.placeholder.com/50/1a73e8/ffffff?text=CP"
-        alt="Company Profile"
-      />
-      <span>Company Profile</span>
-    </div>
-    <div class="icon-item">
-      <img
-        src="https://via.placeholder.com/50/34a853/ffffff?text=Email"
-        alt="Email"
-      />
-      <span>Email</span>
+    <div class="icon-item" *ngFor="let item of contactItems">
+      <a [href]="item.link" target="_blank">
+        <img [src]="item.icon" [alt]="item.label" />
+        <span [innerHTML]="item.label"></span>
+      </a>
     </div>
   </div>
-  <div class="base-layer"></div>
 </div>

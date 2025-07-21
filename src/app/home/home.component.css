@@ -332,7 +332,7 @@ body .lang-ar .services-section-en {
   text-align: center;
   padding: 100px 20px;
   position: relative;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 .pricing-content {
