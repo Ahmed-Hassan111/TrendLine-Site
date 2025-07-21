@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+body {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

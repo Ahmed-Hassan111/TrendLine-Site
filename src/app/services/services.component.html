@@ -1,0 +1,144 @@
+<section class="services-section" *ngIf="isMainServicesPage">
+  <div class="services-header">
+    <span class="services-subtitle">{{ "Services.Title" | translate }}</span>
+    <!-- <h2 class="services-title">FEATURED SRVICES</h2> -->
+  </div>
+  <div class="services-cards">
+    <!-- Service Card 1 -->
+    <div class="service-card">
+      <a
+        [routerLink]="['/services/account-management']"
+        class="service-card-link"
+      >
+        <img
+          class="service-img"
+          src="assets/images/imagecom/service9-min.jpg"
+          alt="Social Ads Service"
+          loading="lazy"
+        />
+        <div class="service-card-content">
+          <div class="service-icon">
+            <i class="fas fa-cog"></i>
+          </div>
+          <h3 class="service-name">{{ "Services.Service1" | translate }}</h3>
+          <p class="service-desc">
+            {{ "Services.Service1Desc" | translate }}
+          </p>
+        </div>
+      </a>
+    </div>
+    <!-- Service Card 2 -->
+    <div class="service-card">
+      <a [routerLink]="['content-design']" class="service-card-link">
+        <img
+          class="service-img"
+          src="assets/images/imagecom/service8-min.jpg"
+          alt="Web
+      Development Service"
+          loading="lazy"
+        />
+        <div class="service-card-content">
+          <div class="service-icon">
+            <i class="fas fa-pen-nib"></i>
+          </div>
+          <h3 class="service-name">{{ "Services.Service2" | translate }}</h3>
+          <p class="service-desc">
+            {{ "Services.Service2Desc" | translate }}
+          </p>
+        </div>
+      </a>
+    </div>
+    <!-- Service Card 3 -->
+    <div class="service-card">
+      <a
+        [routerLink]="['/services/photography-editing']"
+        class="service-card-link"
+      >
+        <img
+          class="service-img"
+          src="assets/images/imagecom/service12-min.jpg"
+          alt="Graphic Design Service"
+          loading="lazy"
+        />
+        <div class="service-card-content">
+          <div class="service-icon">
+            <i class="fas fa-camera-retro"></i>
+          </div>
+          <h3 class="service-name">{{ "Services.Service3" | translate }}</h3>
+          <p class="service-desc">
+            {{ "Services.Service3Desc" | translate }}
+          </p>
+        </div>
+      </a>
+    </div>
+    <!-- Service Card 4 -->
+    <div class="service-card">
+      <a
+        [routerLink]="['/services/advertising-campaigns']"
+        class="service-card-link"
+      >
+        <img
+          class="service-img"
+          src="assets/images/imagecom/service10-min.jpg"
+          alt="Graphic Design Service"
+          loading="lazy"
+        />
+        <div class="service-card-content">
+          <div class="service-icon">
+            <i class="fas fa-file-invoice"></i>
+          </div>
+          <h3 class="service-name">{{ "Services.Service4" | translate }}</h3>
+          <p class="service-desc">
+            {{ "Services.Service4Desc" | translate }}
+          </p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Service Card 5 -->
+    <div class="service-card">
+      <a
+        [routerLink]="['/services/strategy-analysis']"
+        class="service-card-link"
+      >
+        <img
+          class="service-img"
+          src="assets/images/imagecom/service5-min.jpg"
+          alt="Social Media Management Service"
+          loading="lazy"
+        />
+        <div class="service-card-content">
+          <div class="service-icon">
+            <i class="fas fa-bullhorn"></i>
+          </div>
+          <h3 class="service-name">{{ "Services.Service5" | translate }}</h3>
+          <p class="service-desc">
+            {{ "Services.Service5Desc" | translate }}
+          </p>
+        </div>
+      </a>
+    </div>
+    <!-- Service Card 6 -->
+    <div class="service-card">
+      <a
+        [routerLink]="['/services/web-app-development']"
+        class="service-card-link"
+      >
+        <img
+          class="service-img"
+          src="assets/images/imagecom/service11-min.jpg"
+          alt="Social Media Management Service"
+          loading="lazy"
+        />
+        <div class="service-card-content">
+          <div class="service-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3 class="service-name">{{ "Services.Service6" | translate }}</h3>
+          <p class="service-desc">{{ "Services.Service6Desc" | translate }}</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+<router-outlet></router-outlet>

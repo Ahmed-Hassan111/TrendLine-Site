@@ -1,0 +1,42 @@
+/* تأكد أن كل الصفحات لها نفس عرض المحتوى */
+.page-container,
+.main-content,
+section {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container,
+.container-fluid {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  scroll-behavior: smooth;
+  overflow-x: hidden; /* لمنع التمرير الأفقي */
+}
+
+/* ثبات ارتفاع الصفحة في حال المحتوى قليل */
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.ltr {
+  direction: ltr;
+  text-align: left;
+}

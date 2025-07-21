@@ -1,0 +1,32 @@
+<section class="contact-hero">
+  <div class="contact-hero-content">
+    <h1>{{ "Contact.Title" | translate }}</h1>
+
+    <ul class="contact-info-list">
+      <li class="phone">
+        <strong>{{ "Contact.Phone" | translate }}:</strong>
+        <a href="tel:+96877463736">{{ "Contact.PhoneValue" | translate }}</a>
+      </li>
+
+      <li class="email">
+        <strong>{{ "Contact.Email" | translate }}:</strong>
+        <a href="mailto:name@gmail.com">{{
+          "Contact.EmailValue" | translate
+        }}</a>
+      </li>
+
+      <li class="address">
+        <strong>{{ "Contact.Address" | translate }}:</strong>
+        {{ "Contact.Country" | translate }}
+      </li>
+    </ul>
+  </div>
+
+  <div class="contact-hero-img">
+    <img
+      src="assets/images/contact-us-min.jpg"
+      alt="{{ 'Contact.Title' | translate }}"
+      loading="lazy"
+    />
+  </div>
+</section>

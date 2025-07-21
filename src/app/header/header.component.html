@@ -1,0 +1,49 @@
+<nav class="custom-navbar">
+  <div class="navbar-content">
+    <div class="navbar-logo">
+      <span class="brand-main">{{ "Header.Logo-main" | translate }}</span>
+      <span class="brand-sub">{{ "Header.Logo-sub" | translate }}</span>
+    </div>
+
+    <div class="navbar-hamburger" *ngIf="!menuOpen" (click)="menuOpen = true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="navbar-close" *ngIf="menuOpen" (click)="menuOpen = false">
+      &times;
+    </div>
+
+    <ul class="navbar-links" [class.open]="menuOpen">
+      <li>
+        <a routerLink="/" (click)="menuOpen = false">{{
+          "Header.Home" | translate
+        }}</a>
+      </li>
+      <li>
+        <a routerLink="/about" (click)="menuOpen = false">{{
+          "Header.About" | translate
+        }}</a>
+      </li>
+      <li>
+        <a routerLink="/services" (click)="menuOpen = false">{{
+          "Header.Services" | translate
+        }}</a>
+      </li>
+      <li>
+        <a routerLink="/services" (click)="menuOpen = false">{{
+          "Header.BusinessGallery" | translate
+        }}</a>
+      </li>
+      <li>
+        <a routerLink="/contact" (click)="menuOpen = false">{{
+          "Header.ContactUs" | translate
+        }}</a>
+      </li>
+      <li class="lang-switch">
+        <button (click)="switchLanguage('en')">EN</button>
+        <button (click)="switchLanguage('ar')">عربي</button>
+      </li>
+    </ul>
+  </div>
+</nav>

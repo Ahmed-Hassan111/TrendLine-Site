@@ -1,0 +1,184 @@
+/* ==========================================================================
+  About Section Styles
+   ========================================================================== */
+/* === Car Hero Section Styles === */
+.about-hero-section {
+  background: #1c2236;
+  position: relative;
+  min-height: 480px;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.about-hero-content {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 480px;
+  padding-bottom: 0;
+}
+
+.about-hero-text {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px 0 20px;
+  color: #fff;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.about-hero-text p {
+  margin-top: 60px;
+  /* margin-bottom: 1em; */
+  font-size: 1rem;
+}
+.about-hero-text-second {
+  margin-bottom: 1.6em;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.about-hero-car {
+  width: 600px;
+  max-width: 90vw;
+  display: block;
+  margin: 40px auto 0 auto;
+  z-index: 2;
+}
+
+@media (max-width: 900px) {
+  .about-hero-text {
+    font-size: 1.2rem;
+    max-width: 95vw;
+    padding-top: 30px;
+  }
+  .about-hero-car {
+    width: 90vw;
+    margin-top: 20px;
+  }
+  .about-hero-bottom-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 0 20px;
+    font-size: 1rem;
+  }
+}
+.about-section h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #00499f;
+}
+
+.story-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 30px;
+}
+
+.story-text {
+  max-width: 50%;
+  text-align: left;
+}
+
+.story-text p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.story-content img {
+  width: 50%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-section img {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* ==========================================================================
+  Mission Section Styles
+   ========================================================================== */
+/* ==========================================================================
+  Mission Section Styles
+   ========================================================================== */
+.mission-section {
+  background: #f4f4f4; /* Light gray background as in the image */
+  padding: 40px 20px; /* Vertical and horizontal padding for spacing */
+  text-align: center; /* Center-align text */
+  position: relative; /* For positioning the blob */
+}
+
+.mission-section h2 {
+  color: #00499f; /* Blue color for the header, matching the "OurVision" text */
+  font-size: 2.5em; /* Large header size */
+  margin-bottom: 20px; /* Space below the header */
+  font-weight: bold; /* Bold text for emphasis */
+}
+
+.mission-section .bg {
+  max-width: 800px; /* Limit the width of the content for readability */
+  margin: 0 auto; /* Center the content */
+  padding: 20px; /* Inner padding for the text container */
+  background: #fff; /* White background for the text area */
+  border-radius: 10px; /* Slight rounding for a modern look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.mission-section .bg p {
+  font-size: 1.1em; /* Readable text size */
+  color: #333; /* Dark gray text for contrast */
+  line-height: 1.6; /* Improved readability with line spacing */
+  margin-bottom: 15px; /* Space between paragraphs */
+}
+
+.mission-section .bg p:last-child {
+  margin-bottom: 0; /* Remove margin from the last paragraph */
+}
+
+.mission-section .blob {
+  position: absolute; /* Position the blob absolutely */
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Center the blob horizontally */
+  width: 200px; /* Adjust size to match the image's circular element */
+  height: 200px;
+  background: url('/assets/images/trendlinelogo.jpeg') no-repeat center; /* Replace with actual image path */
+  background-size: contain; /* Ensure the image fits within the blob */
+  z-index: -1; /* Place behind the content */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .mission-section h2 {
+    font-size: 2em; /* Reduce header size on small screens */
+  }
+
+  .mission-section .bg {
+    padding: 15px; /* Reduce padding on small screens */
+    max-width: 100%; /* Full width on small screens */
+  }
+
+  .mission-section .blob {
+    width: 150px; /* Smaller blob on small screens */
+    height: 150px;
+  }
+}

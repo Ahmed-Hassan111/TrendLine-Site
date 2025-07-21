@@ -1,0 +1,203 @@
+<!-- =========================
+    Main Section
+    ========================= -->
+<section class="main">
+  <section class="hero-section">
+    <!-- <app-carousel></app-carousel> -->
+    <!-- <video autoplay muted loop playsinline class="bg-video">
+      <source src="assets/images/vid1.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video> -->
+    <app-image-slider [images]="heroImages"></app-image-slider>
+    <!-- <div class="hero-text">
+      <h1>
+        {{ "Home.MainSecMainText" | translate }}<br />{{
+          "Home.MainSecMainText2" | translate
+        }}
+      </h1> -->
+    <!-- <p>
+        {{ "Home.MainSecSubText" | translate }}<br />
+        <strong>"{{ "Home.BrandName" | translate }}"</strong>
+      </p> -->
+    <!-- <div class="hero-buttons">
+        <button class="btn btn-primary" routerLink="/contact">
+          {{ "Home.MainSecButtonContact" | translate }}
+        </button>
+        <a
+          href="https://wa.me/2001022624475?text=Hi%2C%20I%20would%20like%20to%20request%20a%20quote."
+          target="_blank"
+        >
+          <button
+            class="btn btn-outline-primary"
+            onclick="window.open('https://wa.me/96877463736?text=Hi%2C%20I%20would%20like%20to%20request%20a%20quote.','_blank')"
+          >
+            {{ "Home.MainSecButtonRequest" | translate }}
+          </button>
+        </a>
+      </div>
+    </div>  -->
+
+    <!-- Image (Right) -->
+    <!-- <div class="hero-image">
+      <img src="assets/images/logo.gif" alt="Digital Marketing Graphic" />
+    </div> -->
+
+    <!-- </section> -->
+    <!-- closin main section -->
+  </section>
+
+  <!-- =========================
+    Ad Banner Section
+    ========================= -->
+  <section class="ad-banner">
+    <h3 class="ad-title">
+      {{ "ad-banner.Title" | translate }}
+    </h3>
+
+    <div
+      class="marquee-container"
+      [ngClass]="{ rtl: currentLang === 'ar', ltr: currentLang !== 'ar' }"
+    >
+      <div
+        class="marquee-text"
+        [attr.data-text]="'ad-banner.Description' | translate"
+      >
+        {{ "ad-banner.Description" | translate }}
+      </div>
+    </div>
+
+    <div class="ad-content">
+      <a [href]="whatsappAdUrl" target="_blank">
+        <button class="coming-badge">
+          {{ "ad-banner.Button" | translate }}
+        </button>
+      </a>
+    </div>
+  </section>
+  <!-- =========================
+    Our Main Services Section
+    ========================= -->
+  <!-- Services Section -->
+  <section class="services-section-en">
+    <!-- Section Title -->
+    <h2 class="services-title-en">
+      {{ "Home.OurMainSerSecTitle" | translate }}
+    </h2>
+
+    <!-- Services Grid -->
+    <div class="services-list-en">
+      <!-- First Card (Image on Left) -->
+      <div class="service-card-en">
+        <a href="/services" class="card-img-link">
+          <img
+            src="../assets/images/design3.svg"
+            alt="Social Media Service"
+            class="card-img"
+            loading="eager"
+          />
+        </a>
+        <div class="text-our-service">
+          <h3 class="card-title">{{ "Home.Service1" | translate }}</h3>
+          <p>
+            Social media expertise to boost your online presence with engaging
+            content.
+          </p>
+        </div>
+      </div>
+
+      <!-- Second Card (Image on Right) -->
+      <div class="service-card-en image-right">
+        <div class="text-our-service">
+          <h3 class="card-title">{{ "Home.Service2" | translate }}</h3>
+          <p>Interactive learning tools to make education fun and effective.</p>
+        </div>
+        <a href="/services" class="card-img-link">
+          <img
+            src="../assets/images/web3.svg"
+            alt="Service 2"
+            class="card-img"
+            loading="eager"
+          />
+        </a>
+      </div>
+
+      <!-- Third Card (Image on Left) -->
+      <div class="service-card-en last">
+        <a href="/services" class="card-img-link">
+          <img
+            src="../assets/images/design2.svg"
+            alt="Service 3"
+            class="card-img"
+            loading="eager"
+          />
+        </a>
+        <div class="text-our-service">
+          <h3 class="card-title">{{ "Home.Service3" | translate }}</h3>
+          <p>
+            Custom solutions to enhance your business growth and efficiency.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+     WHY CHOOSE US SECTION
+     ========================= -->
+  <!-- لماذا نحن؟ -->
+  <section class="why-choose-us-section">
+    <h2 class="why-title">
+      {{ "Home.WhyChooseUSSecTitle" | translate }}
+    </h2>
+
+    <div class="why-reasons-container">
+      <div class="reason-card reason-top" [@fadeIn]="state">
+        <p class="reason-text">{{ reasons[0].text | translate }}</p>
+      </div>
+      <div class="reason-card reason-right" [@fadeIn]="state">
+        <p class="reason-text">{{ reasons[1].text | translate }}</p>
+      </div>
+      <div class="reason-card reason-bottom" [@fadeIn]="state">
+        <p class="reason-text">{{ reasons[2].text | translate }}</p>
+      </div>
+      <div class="reason-card reason-left" [@fadeIn]="state">
+        <p class="reason-text">{{ reasons[3].text | translate }}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+     PRICING PLANS SECTION
+     ========================= -->
+  <section class="pricing-soon-section">
+    <div class="pricing-content">
+      <h2>{{ "Home.PricingPlans" | translate }}</h2>
+      <p>{{ "Home.PricingDesc" | translate }}</p>
+      <!-- <div class="coming-badge">{{ "Home.PricingButton" | translate }}</div> -->
+    </div>
+    <a
+      [href]="
+        'https://wa.me/96877463736?text=' +
+        ('WhatsappMessageAdButton' | translate | encodeURI)
+      "
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <button
+        class="coming-badge"
+        onclick="window.open('https://wa.me/+96877463736?text=Hi%2C%20I%20would%20like%20to%20request%20a%20quote.','_blank')"
+      >
+        {{ "Home.PricingButton" | translate }}
+      </button>
+    </a>
+  </section>
+  <button
+    class="scroll-arrow"
+    *ngIf="showScrollButton"
+    (click)="scrollArrowAction()"
+  >
+    <i class="fa fa-arrow-up"></i>
+  </button>
+
+  <!-- closin main section -->
+</section>

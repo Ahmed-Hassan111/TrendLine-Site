@@ -1,0 +1,119 @@
+.service-detail-wrapper {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background-color: #f8f9fc;
+}
+
+.service-header {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.service-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5vw;
+  border-radius: 30px;
+  z-index: 1;
+  overflow: hidden;
+}
+/* New background image with opacity using ::before */
+.header-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/assets/images/account-management-cover.JPG") center
+    center/cover no-repeat;
+  opacity: 1; /* adjust opacity as needed */
+  z-index: 0;
+}
+/* Keep text above background */
+.header-overlay h1,
+.header-overlay .subtitle {
+  position: relative;
+  z-index: 1;
+}
+.header-overlay h1 {
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+.header-overlay .subtitle {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.service-content {
+  padding: 4rem 5vw;
+}
+
+.service-features {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.service-features li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.service-features i {
+  color: #4a226c;
+  margin-right: 8px;
+}
+
+.media-showcase {
+  margin-top: 3rem;
+}
+
+.media-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 1rem;
+}
+
+.media-grid img,
+.media-grid video {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cta-section {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.cta-button {
+  background-color: #4a226c;
+  color: white;
+  padding: 12px 32px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #6a3ca1;
+}

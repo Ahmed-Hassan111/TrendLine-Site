@@ -1,0 +1,515 @@
+.main-section {
+  background: linear-gradient(to right, #c0bade, #371a50);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+.hero-section {
+  /* background-image: url("/assets/images/service9.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+  background-color: rgb(88, 70, 70) c;
+  border-radius: 350px;
+  margin-top: 50px;
+  margin-bottom: 115px;
+}
+/* =========================
+   Ad Banner Section
+   ========================= */
+.ad-banner {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 40px 20px;
+  color: #000;
+  position: relative;
+  border-radius: 30px;
+}
+
+/* ✅ العنوان ثابت */
+.ad-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* ✅ النص المتحرك فقط للوصف */
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.marquee-text {
+  display: inline-block;
+  /* بنخلي عرض النص أكبر من مساحة العرض بكتير علشان يتحرك بسلاسة */
+  min-width: 100%;
+  padding-left: 100%;
+  font-weight: bold;
+  font-size: 1.3rem;
+
+  /* ✅ تحسين الحركة: */
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translate3d(0, 0, 0); /* GPU acceleration */
+  animation: marquee-left 35s linear infinite;
+}
+
+.marquee-container.rtl .marquee-text {
+  animation: marquee-right 35s linear infinite;
+}
+
+/* Right to Left */
+@keyframes marquee-left {
+  from {
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes marquee-right {
+  from {
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+/* =========================
+   Our Main Services Section
+   ========================= */
+/* Container for the whole section */
+.services-section-en {
+  direction: ltr;
+  text-align: left;
+  border-radius: 30px;
+}
+body .lang-ar .services-section-en {
+  direction: rtl !important ;
+  text-align: right;
+}
+
+.services-title-en {
+  padding-top: 4rem;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 900;
+  font-size: clamp(3rem, 5vw, 5rem);
+  font-family: poppins, sans-serif;
+}
+
+.services-section-en {
+  /* margin: 80px 0;
+  padding: 0 5vw; */
+  text-align: center;
+  width: 100%;
+  /* edit */
+  /* background: linear-gradient(to right, #251c50, #371a50); */
+  background: linear-gradient(to right, #483994, #521c81);
+  animation: fadeIn 1s ease;
+}
+
+/* Fade-in animation for section */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.service-card-en {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: transparent;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+  margin-bottom: 40px; /* Space between cards */
+  gap: 200px; /* Space between image and text */
+  width: 100%; /* Ensure the card takes full width */
+}
+.image-right .card-img-link {
+  width: 65%;
+  text-align: right;
+  margin: 0 10px;
+}
+.image-right {
+  height: 500px;
+}
+.last {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 20px; */
+  border-radius: 20px;
+  width: 100%;
+  height: 600px;
+}
+
+.last img {
+  width: 100%;
+  height: 700px;
+}
+.text-our-service {
+  width: 50%;
+  text-align: right;
+  color: #cfc9c9;
+  /* margin: 0 100px; */
+}
+.last .card-img-link {
+  height: 600px;
+}
+.card-title {
+  font-size: clamp(3rem, 3vw, 4rem);
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.card-img-link {
+  width: 45%;
+  text-align: left;
+  overflow: hidden;
+  display: inline;
+  margin: 0 -100px;
+}
+
+.card-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* =========================
+   WHY CHOOSE US SECTION
+   ========================= */
+.why-choose-us-section {
+  background: transparent;
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+  width: 100%;
+  position: relative; /* Required for pseudo-elements */
+  overflow: hidden; /* Prevent blur overflow */
+  border-radius: 30px; /* Restored from comment for consistency with ad-banner */
+}
+
+/* .why-choose-us-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 100%;
+  background-image: url("/assets/images/whychooseusbg1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% auto;
+  /* filter: blur(5px); */ /*
+  z-index: 0;
+  border-radius: 0 !important;
+} */
+/* .why-choose-us-section > * {
+  position: relative;
+  z-index: 2;
+} */
+
+/* .why-choose-us-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4); 
+  z-index: 1;
+} */
+.why-title {
+  font-size: 2em;
+  color: #251c50;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.why-reasons-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.reason-card {
+  background: linear-gradient(to right, #251c50, #371a50);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(74, 144, 226, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reason-card:hover {
+  box-shadow: 0 8px 16px rgba(74, 144, 226, 0.3);
+  background: linear-gradient(to right, #feffff, #a759ec);
+  cursor: pointer;
+  color: #020242;
+}
+
+.reason-text {
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.reason-text:hover {
+  font-size: 21px;
+  font-weight: 600;
+  transition: font-size 0.3s ease;
+}
+
+.reason-top {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.reason-right {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.reason-bottom {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.reason-left {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+@media (max-width: 600px) {
+  .why-choose-us-section {
+    padding: 20px;
+  }
+
+  .why-title {
+    font-size: 1.5em;
+  }
+
+  .reason-text {
+    font-size: 1rem;
+  }
+
+  .reason-text:hover {
+    font-size: 1.1rem;
+  }
+}
+
+/* =========================
+   PRICING PLANS SECTION
+   ========================= */
+/* Section container */
+/* Pricing Plan Coming Soon Section */
+.pricing-soon-section {
+  background: linear-gradient(to right, #251c50, #371a50);
+  color: #ffffff;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.pricing-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.pricing-content h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.pricing-content p {
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+  line-height: 1.8;
+  color: #e0e0e0;
+}
+
+.coming-badge {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #ffc107;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  animation: pulse 1.5s infinite ease-in-out;
+  text-decoration: none;
+}
+
+/* Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.85;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .pricing-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .pricing-content p {
+    font-size: 1.2rem;
+  }
+
+  .coming-badge {
+    font-size: 1.1rem;
+    padding: 12px 24px;
+  }
+  .services-list-en {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .service-card-en {
+    gap: 40px;
+    text-align: center;
+  }
+
+  .card-img-link,
+  .text-our-service {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .service-card-en:nth-child(2) {
+    margin-bottom: 10px;
+  }
+  .image-right .card-img-link {
+    padding-top: 100px;
+    text-align: center;
+    width: 100%;
+  }
+  .last {
+    width: 100%;
+    text-align: center;
+    height: 400px;
+  }
+  .services-title-en {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .pricing-soon-section {
+    padding: 60px 16px;
+  }
+
+  .pricing-content h2 {
+    font-size: 2rem;
+  }
+
+  .pricing-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .coming-badge {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  .services-title-en {
+    font-size: clamp(2rem, 6vw, 3rem);
+    margin-bottom: 3rem;
+  }
+
+  .card-title {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+  }
+
+  .text-our-service {
+    font-size: 0.95rem;
+  }
+
+  .service-card-en {
+    padding: 10px;
+    gap: 20px;
+  }
+  .last {
+    width: 100%;
+    text-align: center;
+    height: 300px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 400px) {
+  .pricing-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .coming-badge {
+    font-size: 0.95rem;
+    padding: 8px 18px;
+  }
+  .image-right {
+    height: 300px;
+  }
+}
+
+/* =========================
+   All sections media queries
+   ========================= */
+.scroll-arrow {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+  background-color: #483994;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+.scroll-arrow:hover {
+  background-color: #371a50;
+}
