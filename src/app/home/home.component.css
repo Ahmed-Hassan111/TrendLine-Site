@@ -5,10 +5,6 @@
   text-align: center;
 }
 .hero-section {
-  /* background-image: url("/assets/images/service9.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; */
   background-color: rgb(88, 70, 70) c;
   border-radius: 350px;
   margin-top: 100px;
@@ -206,40 +202,6 @@ body .lang-ar .services-section-en {
   overflow: hidden; /* Prevent blur overflow */
   border-radius: 30px; /* Restored from comment for consistency with ad-banner */
 }
-
-/* .why-choose-us-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100vw;
-  height: 100%;
-  background-image: url("/assets/images/whychooseusbg1.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-size: 100% auto;
-  /* filter: blur(5px); */ /*
-  z-index: 0;
-  border-radius: 0 !important;
-} */
-/* .why-choose-us-section > * {
-  position: relative;
-  z-index: 2;
-} */
-
-/* .why-choose-us-section::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.4);
-  z-index: 1;
-} */
 .why-title {
   font-size: 2em;
   color: #251c50;
@@ -323,8 +285,6 @@ body .lang-ar .services-section-en {
 /* =========================
    PRICING PLANS SECTION
    ========================= */
-/* Section container */
-/* Pricing Plan Coming Soon Section */
 .pricing-soon-section {
   background: linear-gradient(to right, #251c50, #371a50);
   color: #ffffff;
