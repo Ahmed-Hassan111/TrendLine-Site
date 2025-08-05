@@ -1,66 +1,69 @@
 <section class="advertising-campaigns-wrapper">
   <div class="campaign-header">
     <div class="header-background">
-      <img src="assets/images/acc.jpg" alt="Advertising Campaign Service" />
+      <img src="assets/images/Design/1.jpg" alt="Content & Design Service" />
     </div>
     <div class="header-overlay">
-      <h1 class="title">Advertising Campaigns</h1>
+      <h1 class="title">{{ "Service2.PageImgTitle" | translate }}</h1>
       <p class="subtitle">
-        Elevate your brand with innovative advertising solutions
+        {{ "Service2.PageImgDesc" | translate }}
       </p>
     </div>
   </div>
 
   <div class="campaign-content container">
-    <h2>What We Provide</h2>
+    <h2>{{ "Service2.Sec2Title" | translate }}</h2>
     <p>
-      Customized advertising strategies designed to boost your brand's
-      visibility and engagement.
+      {{ "Service2.Sec2Desc" | translate }}
     </p>
 
     <div class="campaign-features">
       <div class="feature-item">
-        <i class="fa fa-bullseye"></i>
-        <h3>Targeted Advertising</h3>
-        <p>Reach your ideal audience with precision targeting.</p>
+        <i class="fa fa-pen-nib"></i>
+        <h3>{{ "Service2.Sec2Card1Title" | translate }}</h3>
+        <p>{{ "Service2.Sec2Card1Desc" | translate }}</p>
       </div>
       <div class="feature-item">
-        <i class="fa fa-paint-brush"></i>
-        <h3>Creative Design</h3>
-        <p>Eye-catching designs that resonate with your audience.</p>
+        <i class="fa fa-image"></i>
+        <h3>{{ "Service2.Sec2Card2Title" | translate }}</h3>
+        <p>{{ "Service2.Sec2Card2Desc" | translate }}</p>
       </div>
       <div class="feature-item">
-        <i class="fa fa-chart-line"></i>
-        <h3>Performance Analytics</h3>
-        <p>Track and optimize your campaigns for maximum ROI.</p>
+        <i class="fa fa-id-badge"></i>
+        <h3>{{ "Service2.Sec2Card3Title" | translate }}</h3>
+        <p>{{ "Service2.Sec2Card3Desc" | translate }}</p>
       </div>
       <div class="feature-item">
-        <i class="fa fa-share-alt"></i>
-        <h3>Multi-Platform Strategy</h3>
-        <p>Engage users across various platforms effectively.</p>
+        <i class="fa fa-star"></i>
+        <h3>{{ "Service2.Sec2Card4Title" | translate }}</h3>
+        <p>{{ "Service2.Sec2Card4Desc" | translate }}</p>
       </div>
     </div>
 
     <div class="media-showcase">
-      <h3>Campaign Highlights</h3>
+      <h3>{{ "Service2.Sec3Title" | translate }}</h3>
       <div class="media-grid">
-        <img src="assets/images/slid1.jpg" alt="Campaign Preview" />
-        <img src="assets/images/slid7.png" alt="Campaign Preview" />
-        <img src="assets/images/service11.jpg" alt="Campaign Preview" />
-        <video autoplay muted loop playsinline>
-          <source src="assets/images/vidtest.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <img src="assets/images/Design/1.jpg" alt="Content & Design Example" (click)="openImage('assets/images/Design/1.jpg')" />
+        <img src="assets/images/Design/8.png" alt="Content & Design Example" (click)="openImage('assets/images/Design/8.png')" />
+        <img src="assets/images/Design/4.jpg" alt="Content & Design Example" (click)="openImage('assets/images/Design/4.jpg')" />
+        <img src="assets/images/Design/3.jpg" alt="Content & Design Example" (click)="openImage('assets/images/Design/3.jpg')" />
+      </div>
+      <!-- Modal Viewer -->
+      <div class="image-modal" *ngIf="selectedImage" (click)="closeImage()">
+        <div class="modal-image-wrapper" (click)="$event.stopPropagation()">
+          <img [src]="selectedImage" alt="Full View" />
+          <button class="close-btn" (click)="closeImage()">×</button>
+        </div>
       </div>
     </div>
 
     <div class="cta-section">
       <a
-        href="https://wa.me/96877463736?text=Hi, I would like to inquire about your Advertising Campaign services."
+        href="https://wa.me/96877463736?text=Hi, I would like to inquire about your Content & Design Service2."
         class="cta-button"
         target="_blank"
       >
-        Get in Touch on WhatsApp
+        {{ "Service2.Sec4Button" | translate }}
       </a>
     </div>
   </div>

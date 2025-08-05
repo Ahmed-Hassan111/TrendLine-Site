@@ -24,7 +24,7 @@
   },
   "About": {
     "Title": "About Us",
-    "Description1": " We are a company specializing in social media account management. We offer integrated solutions that help brands appear professional, attractive, and effective. ",
+    "Description1": " We are a company specializing in social media account management. We offer integrated solutions that help brands appear ",
     "Description2": " Our goal is to be the primary creative partner for your success in the digital world. ",
     "Description3": " Digital excellence starts with the details ",
     "OurVision": "OurVision",
@@ -45,7 +45,21 @@
     "Service5": "Advertising Campaigns",
     "Service5Desc": "Preparing and executing targeted paid campaigns with precise analysis and continuous optimization to achieve the best ROI.",
     "Service6": "App & Web Development",
-    "Service6Desc": "Custom development of responsive websites and mobile applications tailored to your business needs, secure coding."
+    "Service6Desc": "Custom development of responsive websites and mobile applications tailored to your business needs, secure coding.",
+    "Service6PageImgTitle":"Web Development",
+    "Service6PageImgDesc":"We provide custom web development services, including advanced design, exemplary programming practices, and tailored support to meet your business needs. Our team ensures your website is not only visually appealing but also functional and user-friendly.",
+    "Service6PageSec2Title":"Business Service & Portfolio Websites",
+    "Service6PageSec2Desc": "Custom websites to showcase your products, services, and contact information in both Arabic and English.",
+    "Service6PageSec2Card1Title": "Business & Service Showcase Websites",
+    "Service6PageSec2Card1Desc": "Custom websites to showcase your products, services, and contact information in both Arabic and English.",
+    "Service6PageSec2Card2Title": "E-commerce Websites",
+    "Service6PageSec2Card2Desc": "Online stores with dashboards, secure payment processing, and multiple payment methods.",
+    "Service6PageSec2Card3Title": "Enterprise Web Systems",
+    "Service6PageSec2Card3Desc": "Custom systems for businesses: accounting, HR, inventory, and workflow management.",
+    "Service6PageSec2Card4Title": "Custom Web Applications",
+    "Service6PageSec2Card4Desc": "We develop tailored web applications designed specifically to meet your business needs, ensuring maximum efficiency and productivity.",
+    "Service6PageSec3Title":"Our Work in Web Development",
+    "Service6PageSec4Button": "Get in Touch on WhatsApp"
   },
   "Footer": {
     "Title1": "Contact Numbers",
@@ -67,8 +81,11 @@
     "MainSecButtonRequest": "Request a Quote",
     "OurMainSerSecTitle": "Our Main Services",
     "Service1": "Content & Design Writing",
+    "Service1Desc": " Social media expertise to boost your online presence with engaging content.",
     "Service2": "App & Web Development",
+    "Service2Desc": "Interactive learning tools to make education fun and effective.",
     "Service3": "Account Management",
+    "Service3Desc": "Custom solutions to enhance your business growth and efficiency. ",
     "WhyChooseUSSecTitle": "Why is Trendline your first choice as an advertising and publicity company?",
     "WhyChooseUSReason1": "Specialized and creative team",
     "WhyChooseUSReason2": "High quality at competitive prices",
@@ -78,28 +95,117 @@
     "PricingDesc": "Our affordable and flexible plans are launching soon!",
     "PricingButton": "Request a Quote",
     "WhatsappMessagePricingButton": "Hi, I would like to request a quote.",
-    "WhatsappMessageAdButton": "Hi, I would like to inquire about Ads.",
-    "CarouselCards": [
-      {
-        "title": "Debugging the Matrix",
-        "description": "Each bug is a glitch in the Matrix... and we’re here to fix it."
-      },
-      {
-        "title": "The Deployment",
-        "description": "We deploy greatness. CI/CD that ships on time, every time."
-      },
-      {
-        "title": "Creative Vision",
-        "description": "Design meets function. Your vision, deployed."
-      },
-      {
-        "title": "User Feedback",
-        "description": "Listen, learn, iterate — your users are talking."
-      },
-      {
-        "title": "Growth Hacking",
-        "description": "Scale your platform using clever code and caffeine."
-      }
-    ]
+    "WhatsappMessageAdButton": "Hi, I would like to inquire about Ads."
+  },
+  "Service1": {
+    "PageImgTitle": "Account Management",
+    "PageImgDesc": "Comprehensive management of social media accounts, including content, publishing, engagement, and daily monitoring with periodic performance reports.",
+    "Sec2Title": "Account Management Features",
+    "Sec2Desc": "Our account management service covers all aspects of your social media presence.",
+    "Sec2Card1Title": "Content Management",
+    "Sec2Card1Desc": "We create, schedule, and manage your content for maximum impact.",
+    "Sec2Card2Title": "Performance Analysis",
+    "Sec2Card2Desc": "We analyze your account's performance and provide actionable insights.",
+    "Sec2Card3Title": "Audience Engagement",
+    "Sec2Card3Desc": "We interact with your audience to build a loyal community.",
+    "Sec2Card4Title": "Periodic Reports",
+    "Sec2Card4Desc": "Receive regular reports on your account's growth and engagement.",
+    "Sec3Title": "Account Management Portfolio",
+    "Sec4Button": "Contact for Account Management"
+  },
+  "Service5": {
+    "PageImgTitle": "Advertising Campaigns",
+    "PageImgDesc": "Preparing and executing targeted paid campaigns with precise analysis and continuous optimization to achieve the best ROI.",
+    "Sec2Title": "Advertising Campaign Features",
+    "Sec2Desc": "Our advertising campaigns are designed for maximum reach and ROI.",
+    "Sec2Card1Title": "Precise Targeting",
+    "Sec2Card1Desc": "We target the right audience for your business.",
+    "Sec2Card2Title": "Results Analysis",
+    "Sec2Card2Desc": "We analyze campaign results to optimize performance.",
+    "Sec2Card3Title": "Continuous Optimization",
+    "Sec2Card3Desc": "We continuously improve campaigns for better results.",
+    "Sec2Card4Title": "Performance Reports",
+    "Sec2Card4Desc": "Get detailed reports on your campaign's performance.",
+    "Sec3Title": "Advertising Campaign Portfolio",
+    "Sec4Button": "Contact for Advertising Campaigns"
+  },
+  "Service2": {
+    "PageImgTitle": "Content & Design",
+    "PageImgDesc": "Writing attractive content aligned with brand identity, designing professional posts and stories.",
+    "Sec2Title": "Content & Design Features",
+    "Sec2Desc": "We provide creative content and design solutions for your brand.",
+    "Sec2Card1Title": "Content Writing",
+    "Sec2Card1Desc": "Engaging content tailored to your brand's voice.",
+    "Sec2Card2Title": "Post Design",
+    "Sec2Card2Desc": "Professional design for posts and stories.",
+    "Sec2Card3Title": "Bio Organization",
+    "Sec2Card3Desc": "We organize your bio for maximum impact.",
+    "Sec2Card4Title": "Highlighting Key Points",
+    "Sec2Card4Desc": "We highlight your brand's main strengths.",
+    "Sec3Title": "Content & Design Portfolio",
+    "Sec4Button": "Contact for Content & Design"
+  },
+  "Service3": {
+    "PageImgTitle": "Photography & Editing",
+    "PageImgDesc": "Professional photography for products, people, and locations, including aerial (drone) shots and creative short video editing.",
+    "Sec2Title": "Photography & Editing Features",
+    "Sec2Desc": "Our photography and editing services cover all your visual needs.",
+    "Sec2Card1Title": "Product Photography",
+    "Sec2Card1Desc": "High-quality photos of your products.",
+    "Sec2Card2Title": "Video Editing",
+    "Sec2Card2Desc": "Creative editing for short videos.",
+    "Sec2Card3Title": "People Photography",
+    "Sec2Card3Desc": "Professional portraits and team photos.",
+    "Sec2Card4Title": "Aerial Photography",
+    "Sec2Card4Desc": "Stunning aerial shots using drones.",
+    "Sec3Title": "Photography & Editing Portfolio",
+    "Sec4Button": "Contact for Photography & Editing"
+  },
+  "Service4": {
+    "PageImgTitle": "Strategy & Analysis",
+    "PageImgDesc": "Building growth plans based on market and audience analysis to increase engagement, reach, and achieve digital goals.",
+    "Sec2Title": "Strategy & Analysis Features",
+    "Sec2Desc": "We help you grow with data-driven strategies.",
+    "Sec2Card1Title": "Market Analysis",
+    "Sec2Card1Desc": "In-depth analysis of your market and competitors.",
+    "Sec2Card2Title": "Goal Setting",
+    "Sec2Card2Desc": "We help you define and achieve your digital goals.",
+    "Sec2Card3Title": "Growth Strategies",
+    "Sec2Card3Desc": "Custom strategies to grow your business.",
+    "Sec2Card4Title": "Performance Reports",
+    "Sec2Card4Desc": "Regular reports to track your progress.",
+    "Sec3Title": "Strategy & Analysis Portfolio",
+    "Sec4Button": "Contact for Strategy & Analysis"
+  },
+  "BusinessGallery": {
+    "Title": "Our Services Portfolio",
+    "Service1": {
+      "Title": "Account Management",
+      "Description": "Comprehensive client relationship management with dedicated account managers ensuring seamless communication and project success."
+    },
+    "Service2": {
+      "Title": "Advertising Campaigns",
+      "Description": "Strategic planning and execution of advertising campaigns to maximize brand reach and engagement across multiple platforms."
+    },
+    "Service3": {
+      "Title": "App & Web Development",
+      "Description": "Custom application and website development tailored to your business needs, utilizing the latest technologies for optimal performance."
+    },
+    "Service4": {
+      "Title": "Content & Design",
+      "Description": "Creative content creation and design services to elevate your brand's visual identity and storytelling."
+    },
+    "Service5": {
+      "Title": "Photography & Editing",
+      "Description": "Professional photography and editing services to capture and enhance your brand's most important moments."
+    },
+    "Service6": {
+      "Title": "Strategy & Analysis",
+      "Description": "In-depth market research, strategy development, and analytics to drive informed business decisions and growth."
+    },
+    "MediaTypes": {
+      "Image": "",
+      "Video": ""
+    }
   }
 }

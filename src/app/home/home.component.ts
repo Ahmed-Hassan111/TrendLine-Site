@@ -21,7 +21,6 @@ import {
 } from '@angular/animations';
 import { OnInit } from '@angular/core';
 import { EncodeUriPipe } from '../encode-uri.pipe';
-import { CarouselComponent } from '../shared/carousel/carousel.component';
 @Component({
   selector: 'app-home',
   standalone: true,

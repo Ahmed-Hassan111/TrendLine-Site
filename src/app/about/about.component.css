@@ -47,6 +47,11 @@
   font-weight: bold;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
+/* ====================
+   basics
+==================== */
+
 .about-hero-car {
   width: 600px;
   max-width: 90vw;
@@ -132,6 +137,105 @@
   font-size: 2.5em; /* Large header size */
   margin-bottom: 20px; /* Space below the header */
   font-weight: bold; /* Bold text for emphasis */
+}
+.bg {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: view 1.5s ease-out forwards;
+  will-change: transform, opacity, border-radius;
+  transition: border-radius 0.6s ease, box-shadow 0.6s ease;
+  position: relative;
+}
+
+/* ====================
+   أنيميشن عند الظهور
+==================== */
+@keyframes view {
+  0% {
+    border-radius: 0px;
+    box-shadow: none;
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  25% {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(69, 147, 255);
+    opacity: 0.25;
+    transform: translateY(30px);
+  }
+  50% {
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(59, 130, 230);
+    opacity: 0.5;
+    transform: translateY(20px);
+  }
+  75% {
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgb(59, 127, 223);
+    opacity: 0.75;
+    transform: translateY(10px);
+  }
+  100% {
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgb(49, 111, 197);
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ====================
+   أنيميشن عند hover
+==================== */
+.bg:hover {
+  border-radius: 100px;
+  box-shadow: 0 0 20px rgb(29, 78, 216);
+}
+
+/* ====================
+   أنيميشن عند التبديل
+==================== */
+.bg.replace-animation {
+  animation: radiusPop 1s ease-in-out;
+}
+
+@keyframes radiusPop {
+  0% {
+    border-radius: 40px;
+  }
+  50% {
+    border-radius: 100px;
+  }
+  100% {
+    border-radius: 20px;
+  }
+}
+.mission-section .bg p {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlide 1s ease-out forwards;
+}
+
+/* Delay كل سطر */
+.mission-section .bg p:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.mission-section .bg p:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.mission-section .bg p:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+@keyframes fadeSlide {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.mission-section .bg p {
+  color: #ffffff;
+  text-shadow: 0 0 5px rgb(200, 200, 212), 0 0 10px rgb(243, 243, 243), 0 0 20px #0ff;
+  font-weight: 600;
 }
 
 .mission-section .bg {

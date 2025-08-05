@@ -25,7 +25,7 @@ export class QrCodeComponent {
       link: 'https://tiktok.com',
     },
     {
-      label: 'Website',
+      label: 'Facebook',
       icon: 'assets/icons/facebook.png',
       link: 'https://www.facebook.com/profile.php?id=61578164207163',
     },

@@ -11,11 +11,11 @@
   background-position: center; */
   background-color: rgb(88, 70, 70) c;
   border-radius: 350px;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: 115px;
 }
 /* =========================
-   Ad Banner Section
+    Ad Banner Section
    ========================= */
 .ad-banner {
   background-color: #ffffff;
@@ -54,14 +54,13 @@
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   transform: translate3d(0, 0, 0); /* GPU acceleration */
-  animation: marquee-left 35s linear infinite;
+  animation: marquee-left 20s linear infinite;
 }
 
 .marquee-container.rtl .marquee-text {
-  animation: marquee-right 35s linear infinite;
+  animation: marquee-right 20s linear infinite ease-out;
 }
 
-/* Right to Left */
 @keyframes marquee-left {
   from {
     transform: translate3d(100%, 0, 0);
@@ -238,7 +237,7 @@ body .lang-ar .services-section-en {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.4); 
+  background: rgba(255, 255, 255, 0.4);
   z-index: 1;
 } */
 .why-title {

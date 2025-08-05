@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Libertinus+Mono&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tagesschrift&display=swap');
+
 .advertising-campaigns-wrapper {
   font-family: "Poppins", sans-serif;
   color: #333;
@@ -8,7 +10,7 @@
   position: relative;
   height: 60vh;
   overflow: hidden;
-  border-radius: 70px;
+  border-bottom-left-radius: 30px;
 }
 
 .header-background {
@@ -35,6 +37,7 @@
   flex-direction: column;
   justify-content: center;
   padding-left: 5vw;
+  padding-right: 25px;
   height: 100%;
   padding-top: 220px;
 }
@@ -43,6 +46,7 @@
   font-size: 3rem;
   margin: 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-family: "Tagesschrift", system-ui;
 }
 
 .header-overlay .subtitle {
@@ -119,4 +123,153 @@
 .cta-button:hover {
   background-color: #3498db;
   transform: scale(1.05);
+}
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-image-wrapper {
+  position: relative; /* علشان نزبط الزر جوه الصورة */
+  display: inline-block;
+}
+
+.modal-image-wrapper img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* ✅ موبايلات صغيرة (أقل من 576px) */
+@media (max-width: 575.98px) {
+  .header-overlay {
+    padding-top: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+
+  .header-overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .header-overlay .subtitle {
+    font-size: 1rem;
+  }
+
+  .campaign-features {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .feature-item {
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
+
+  .media-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .modal-image-wrapper img {
+    max-width: 95vw;
+    max-height: 80vh;
+  }
+
+  .close-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 1.5rem;
+  }
+}
+
+/* ✅ تابلت وأجهزة متوسطة (من 576px إلى 991px) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .header-overlay {
+    padding-top: 160px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .header-overlay h1 {
+    font-size: 2.2rem;
+  }
+
+  .campaign-features {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .feature-item {
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
+
+  .media-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+/* ✅ شاشات كبيرة مثل الديسكتوب (992px أو أكثر) */
+@media (min-width: 992px) {
+  .header-overlay h1 {
+    font-size: 3rem;
+  }
+
+  .media-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .feature-item {
+    flex: 1 1 45%;
+  }
+}
+
+/* ✅ شاشات ضخمة جداً زي التلفزيونات (من 1400px وطالع) */
+@media (min-width: 1400px) {
+  .header-overlay {
+    padding-top: 260px;
+    padding-left: 8vw;
+    padding-right: 8vw;
+  }
+
+  .header-overlay h1 {
+    font-size: 4rem;
+  }
+
+  .cta-button {
+    font-size: 1.2rem;
+    padding: 14px 40px;
+  }
 }
