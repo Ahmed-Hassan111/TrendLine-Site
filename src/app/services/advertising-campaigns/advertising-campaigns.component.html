@@ -1,4 +1,4 @@
-<section class="advertising-campaigns-wrapper">
+دوت<section class="advertising-campaigns-wrapper">
   <div class="campaign-header">
     <div class="header-background">
       <img src="assets/images/webimgs/img6.jpg" alt="Advertising Campaigns Service" />
@@ -14,29 +14,41 @@
   <div class="campaign-content container">
     <h2>{{ "Service5.Sec2Title" | translate }}</h2>
     <p>
-      {{ "Service5.Sec2Title" | translate }}
+      {{ "Service5.Sec2Desc" | translate }}
     </p>
 
     <div class="campaign-features">
       <div class="feature-item">
         <i class="fa fa-bullseye"></i>
         <h3>{{ "Service5.Sec2Card1Title" | translate }}</h3>
-        <p>{{ "Service5.Sec2Card1Desc" | translate }}</p>
+        <ul class="feature-points">
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service5.Sec2Card1Point1" | translate }}</li>
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service5.Sec2Card1Point2" | translate }}</li>
+        </ul>
       </div>
       <div class="feature-item">
-        <i class="fa fa-chart-bar"></i>
+        <i class="fa fa-palette"></i>
         <h3>{{ "Service5.Sec2Card2Title" | translate }}</h3>
-        <p>{{ "Service5.Sec2Card2Desc" | translate }}</p>
+        <ul class="feature-points">
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service5.Sec2Card2Point1" | translate }}</li>
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service5.Sec2Card2Point2" | translate }}</li>
+        </ul>
       </div>
       <div class="feature-item">
         <i class="fa fa-sync-alt"></i>
         <h3>{{ "Service5.Sec2Card3Title" | translate }}</h3>
-        <p>{{ "Service5.Sec2Card3Desc" | translate }}</p>
+        <ul class="feature-points">
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service5.Sec2Card3Point1" | translate }}</li>
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service5.Sec2Card3Point2" | translate }}</li>
+        </ul>
       </div>
       <div class="feature-item">
-        <i class="fa fa-file-alt"></i>
+        <i class="fa fa-chart-line"></i>
         <h3>{{ "Service5.Sec2Card4Title" | translate }}</h3>
-        <p>{{ "Service5.Sec2Card4Desc" | translate }}</p>
+        <ul class="feature-points">
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service5.Sec2Card4Point1" | translate }}</li>
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service5.Sec2Card4Point2" | translate }}</li>
+        </ul>
       </div>
     </div>
 

@@ -11,6 +11,14 @@ import { HostListener } from '@angular/core';
 })
 export class PhotographyAndEditingComponent {
       selectedImage: string | null = null;
+      currentLang: string = 'ar';
+
+      constructor(private translateService: TranslateService) {
+        this.currentLang = this.translateService.currentLang || 'ar';
+        this.translateService.onLangChange.subscribe((event) => {
+          this.currentLang = event.lang;
+        });
+      }
 
   openImage(imageUrl: string) {
     this.selectedImage = imageUrl;

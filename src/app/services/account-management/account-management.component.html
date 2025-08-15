@@ -1,7 +1,7 @@
 <section class="advertising-campaigns-wrapper">
   <div class="campaign-header">
     <div class="header-background">
-      <img src="assets/images/webimgs/img6.jpg" alt="Account Management Service" />
+      <img src="assets/images/acc-manage/acc-bg.jpg" alt="Account Management Service" />
     </div>
     <div class="header-overlay">
       <h1 class="title">{{ "Service1.PageImgTitle" | translate }}</h1>
@@ -19,24 +19,40 @@
 
     <div class="campaign-features">
       <div class="feature-item">
-        <i class="fa fa-tasks"></i>
+        <i class="fa fa-calendar-alt"></i>
         <h3>{{ "Service1.Sec2Card1Title" | translate }}</h3>
-        <p>{{ "Service1.Sec2Card1Desc" | translate }}</p>
+        <ul class="feature-points">
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service1.Sec2Card1Point1" | translate }}</li>
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service1.Sec2Card1Point2" | translate }}</li>
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service1.Sec2Card1Point3" | translate }}</li>
+        </ul>
+      </div>
+      <div class="feature-item">
+        <i class="fa fa-camera"></i>
+        <h3>{{ "Service1.Sec2Card2Title" | translate }}</h3>
+        <ul class="feature-points">
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service1.Sec2Card2Point1" | translate }}</li>
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service1.Sec2Card2Point2" | translate }}</li>
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service1.Sec2Card2Point3" | translate }}</li>
+        </ul>
+      </div>
+      <div class="feature-item">
+        <i class="fa fa-ad"></i>
+        <h3>{{ "Service1.Sec2Card3Title" | translate }}</h3>
+        <ul class="feature-points">
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service1.Sec2Card3Point1" | translate }}</li>
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service1.Sec2Card3Point2" | translate }}</li>
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service1.Sec2Card3Point3" | translate }}</li>
+        </ul>
       </div>
       <div class="feature-item">
         <i class="fa fa-chart-line"></i>
-        <h3>{{ "Service1.Sec2Card2Title" | translate }}</h3>
-        <p>{{ "Service1.Sec2Card2Desc" | translate }}</p>
-      </div>
-      <div class="feature-item">
-        <i class="fa fa-users"></i>
-        <h3>{{ "Service1.Sec2Card3Title" | translate }}</h3>
-        <p>{{ "Service1.Sec2Card3Desc" | translate }}</p>
-      </div>
-      <div class="feature-item">
-        <i class="fa fa-file-alt"></i>
         <h3>{{ "Service1.Sec2Card4Title" | translate }}</h3>
-        <p>{{ "Service1.Sec2Card4Desc" | translate }}</p>
+        <ul class="feature-points">
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service1.Sec2Card4Point1" | translate }}</li>
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service1.Sec2Card4Point2" | translate }}</li>
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service1.Sec2Card4Point3" | translate }}</li>
+        </ul>
       </div>
     </div>
 

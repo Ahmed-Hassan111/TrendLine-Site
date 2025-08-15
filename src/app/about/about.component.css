@@ -122,9 +122,6 @@
 /* ==========================================================================
   Mission Section Styles
    ========================================================================== */
-/* ==========================================================================
-  Mission Section Styles
-   ========================================================================== */
 .mission-section {
   background: #f4f4f4; /* Light gray background as in the image */
   padding: 40px 20px; /* Vertical and horizontal padding for spacing */
@@ -234,7 +231,7 @@
 }
 .mission-section .bg p {
   color: #ffffff;
-  text-shadow: 0 0 5px rgb(200, 200, 212), 0 0 10px rgb(243, 243, 243), 0 0 20px #0ff;
+  text-shadow: 0 0 5px rgb(200, 200, 212), 0 0 10px rgb(243, 243, 243), 0 0 20px rgb(45, 50, 204);
   font-weight: 600;
 }
 

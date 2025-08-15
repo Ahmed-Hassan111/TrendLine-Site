@@ -21,22 +21,38 @@
       <div class="feature-item">
         <i class="fa fa-camera"></i>
         <h3>{{ "Service3.Sec2Card1Title" | translate }}</h3>
-        <p>{{ "Service3.Sec2Card1Desc" | translate }}</p>
-      </div>
-      <div class="feature-item">
-        <i class="fa fa-film"></i>
-        <h3>{{ "Service3.Sec2Card2Title" | translate }}</h3>
-        <p>{{ "Service3.Sec2Card2Desc" | translate }}</p>
-      </div>
-      <div class="feature-item">
-        <i class="fa fa-user"></i>
-        <h3>{{ "Service3.Sec2Card3Title" | translate }}</h3>
-        <p>{{ "Service3.Sec2Card3Desc" | translate }}</p>
+        <ul class="feature-points">
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service3.Sec2Card1Point1" | translate }}</li>
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service3.Sec2Card1Point2" | translate }}</li>
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service3.Sec2Card1Point3" | translate }}</li>
+        </ul>
       </div>
       <div class="feature-item">
         <i class="fa fa-helicopter"></i>
+        <h3>{{ "Service3.Sec2Card2Title" | translate }}</h3>
+        <ul class="feature-points">
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service3.Sec2Card2Point1" | translate }}</li>
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service3.Sec2Card2Point2" | translate }}</li>
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service3.Sec2Card2Point3" | translate }}</li>
+        </ul>
+      </div>
+      <div class="feature-item">
+        <i class="fa fa-film"></i>
+        <h3>{{ "Service3.Sec2Card3Title" | translate }}</h3>
+        <ul class="feature-points">
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service3.Sec2Card3Point1" | translate }}</li>
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service3.Sec2Card3Point2" | translate }}</li>
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service3.Sec2Card3Point3" | translate }}</li>
+        </ul>
+      </div>
+      <div class="feature-item">
+        <i class="fa fa-palette"></i>
         <h3>{{ "Service3.Sec2Card4Title" | translate }}</h3>
-        <p>{{ "Service3.Sec2Card4Desc" | translate }}</p>
+        <ul class="feature-points">
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service3.Sec2Card4Point1" | translate }}</li>
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service3.Sec2Card4Point2" | translate }}</li>
+          <li [dir]="currentLang === 'en' ? 'ltr' : 'rtl'">{{ "Service3.Sec2Card4Point3" | translate }}</li>
+        </ul>
       </div>
     </div>
 

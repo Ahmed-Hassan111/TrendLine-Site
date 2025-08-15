@@ -84,6 +84,53 @@
   color: #2980b9;
 }
 
+.feature-points {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+}
+
+.feature-points li {
+  position: relative;
+  padding: 8px 25px 8px 0;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  border-bottom: 1px solid #e8e8e8;
+  text-align: right;
+}
+
+.feature-points li:last-child {
+  border-bottom: none;
+}
+
+.feature-points li::before {
+  content: "•";
+  position: absolute;
+  right: 0;
+  top: 8px;
+  color: #2980b9;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* English language styles */
+.feature-points li[dir="ltr"] {
+  padding: 8px 0 8px 25px;
+  text-align: left;
+}
+
+.feature-points li[dir="ltr"]::before {
+  right: auto;
+  left: 0;
+}
+
+.feature-item p {
+  margin-bottom: 15px;
+  color: #666;
+  line-height: 1.5;
+}
+
 .media-showcase {
   margin-top: 3rem;
 }
