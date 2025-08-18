@@ -7,7 +7,7 @@
 
   <div class="icon-grid">
     <div class="icon-item" *ngFor="let item of contactItems">
-      <a [href]="item.link" target="_blank">
+      <a [href]="item.link" target="_blank" [attr.download]="item.download ? '' : null">
         <img [src]="item.icon" [alt]="item.label" />
         <span [innerHTML]="item.label"></span>
       </a>
