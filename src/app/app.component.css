@@ -1,11 +1,12 @@
 /* تأكد أن كل الصفحات لها نفس عرض المحتوى */
-.page-container,
+/* .page-container,
 .main-content,
 section {
+  position: relative !important;
   width: 100%;
   margin: 0;
   padding: 0;
-}
+} */
 .container,
 .container-fluid {
   width: 100%;
@@ -13,16 +14,16 @@ section {
   padding: 0;
 }
 
-html,
-body {
+/* html, */
+/* body {
   margin: 0 !important;
   padding: 0 !important;
   height: 100%;
   width: 100%;
   cursor: pointer;
   scroll-behavior: smooth;
-  overflow-x: hidden; /* لمنع التمرير الأفقي */
-}
+  overflow-x: hidden; 
+} */
 
 /* ثبات ارتفاع الصفحة في حال المحتوى قليل */
 :host {

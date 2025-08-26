@@ -1,7 +1,10 @@
 <section class="advertising-campaigns-wrapper">
   <div class="campaign-header">
     <div class="header-background">
-      <img src="assets/images/webimgs/img6.jpg" alt="Advertising Campaign Service" />
+      <img
+        src="assets/images/webimgs/img6.jpg"
+        alt="Advertising Campaign Service"
+      />
     </div>
     <div class="header-overlay">
       <h1 class="title">{{ "Services.Service6PageImgTitle" | translate }}</h1>
@@ -43,26 +46,58 @@
     <div class="media-showcase">
       <h3>{{ "Services.Service6PageSec3Title" | translate }}</h3>
       <div class="media-grid">
-        <img src="assets/images/webimgs/img11.webp" alt="Your browser does not support this image"(click)="openImage('assets/images/webimgs/img11.webp')" />
-        <img src="assets/images/webimgs/img2.jpg" alt="Your browser does not support this image"  (click)="openImage('assets/images/webimgs/img2.jpg')" />
-        <img src="assets/images/webimgs/img9.webp" alt="Your browser does not support this image" (click)="openImage('assets/images/webimgs/img9.webp')" />
-        <img src="assets/images/webimgs/img8.webp" alt="Your browser does not support this image" (click)="openImage('assets/images/webimgs/img8.webp')" />
-        <img src="assets/images/webimgs/img7.webp" alt="Your browser does not support this image" (click)="openImage('assets/images/webimgs/img7.webp')" />
-        <img src="assets/images/webimgs/img10.jpg" alt="Your browser does not support this image" (click)="openImage('assets/images/webimgs/img10.jpg')" />
-        <video autoplay muted loop playsinline>
+        <img
+          src="assets/images/webimgs/img11.webp"
+          alt="Your browser does not support this image"
+          (click)="openImage('assets/images/webimgs/img11.webp')"
+        />
+        <img
+          src="assets/images/webimgs/img2.jpg"
+          alt="Your browser does not support this image"
+          (click)="openImage('assets/images/webimgs/img2.jpg')"
+        />
+        <img
+          src="assets/images/webimgs/img9.webp"
+          alt="Your browser does not support this image"
+          (click)="openImage('assets/images/webimgs/img9.webp')"
+        />
+        <img
+          src="assets/images/webimgs/img8.webp"
+          alt="Your browser does not support this image"
+          (click)="openImage('assets/images/webimgs/img8.webp')"
+        />
+        <img
+          src="assets/images/webimgs/img7.webp"
+          alt="Your browser does not support this image"
+          (click)="openImage('assets/images/webimgs/img7.webp')"
+        />
+        <img
+          src="assets/images/webimgs/img10.jpg"
+          alt="Your browser does not support this image"
+          (click)="openImage('assets/images/webimgs/img10.jpg')"
+        />
+        <img
+          src="assets/images/webimgs/img12.png"
+          alt="Your browser does not support this image"
+          (click)="openImage('assets/images/webimgs/img12.png')"
+        />
+        <img
+          src="assets/images/webimgs/img13.png"
+          alt="Your browser does not support this image"
+          (click)="openImage('assets/images/webimgs/img13.png')"
+        />
+        <!-- <video autoplay muted loop playsinline>
           <source src="assets/images/vidtest.mp4" type="video/mp4" />
           Your browser does not support the video tag.
-        </video>
+        </video> -->
       </div>
       <!-- Modal Viewer -->
-    <div class="image-modal" *ngIf="selectedImage" (click)="closeImage()">
-  <div class="modal-image-wrapper" (click)="$event.stopPropagation()">
-    <img [src]="selectedImage" alt="Full View" />
-    <button class="close-btn" (click)="closeImage()">×</button>
-  </div>
-</div>
-
-
+      <div class="image-modal" *ngIf="selectedImage" (click)="closeImage()">
+        <div class="modal-image-wrapper" (click)="$event.stopPropagation()">
+          <img [src]="selectedImage" alt="Full View" />
+          <button class="close-btn" (click)="closeImage()">×</button>
+        </div>
+      </div>
     </div>
 
     <div class="cta-section">
