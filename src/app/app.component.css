@@ -1,29 +1,10 @@
 /* تأكد أن كل الصفحات لها نفس عرض المحتوى */
-/* .page-container,
-.main-content,
-section {
-  position: relative !important;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-} */
 .container,
 .container-fluid {
   width: 100%;
   margin: 0;
   padding: 0;
 }
-
-/* html, */
-/* body {
-  margin: 0 !important;
-  padding: 0 !important;
-  height: 100%;
-  width: 100%;
-  cursor: pointer;
-  scroll-behavior: smooth;
-  overflow-x: hidden; 
-} */
 
 /* ثبات ارتفاع الصفحة في حال المحتوى قليل */
 :host {
@@ -41,6 +22,29 @@ section {
   direction: ltr;
   text-align: left;
 }
+
 * {
   transition: all 0.3s ease;
+}
+
+/* تأكد إن الشات بوت ظاهر دايماً */
+app-chatbot {
+  position: relative !important;
+  z-index: 9999 !important;
+  display: block !important;
+  pointer-events: auto !important;
+}
+
+/* تأكد إن مفيش overflow hidden بيأثر على الشات */
+body,
+html {
+  overflow-x: visible !important;
+}
+
+/* تأكد إن الشات فوق كل حاجة */
+app-chatbot .chatbot-container {
+  position: fixed !important;
+  bottom: 25px !important;
+  right: 25px !important;
+  z-index: 99999 !important;
 }

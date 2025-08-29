@@ -1,12 +1,18 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { RouterOutlet } from '@angular/router'; // Ensure this import is used
+import { RouterOutlet } from '@angular/router';
+import { ChatbotComponent } from './shared/chatbot/chatbot.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet], // Register RouterOutlet as an import
-  template: '<router-outlet></router-outlet>', // Inline template
+  imports: [RouterOutlet, ChatbotComponent],
+  template: `
+    <div [class.rtl]="isArabic" [class.ltr]="!isArabic">
+      <router-outlet></router-outlet>
+      <app-chatbot></app-chatbot>
+    </div>
+  `,
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
@@ -14,8 +20,8 @@ export class AppComponent {
   currentLang = 'en';
 
   constructor(private translate: TranslateService) {
-    this.translate.setDefaultLang('ar'); // Start with Arabic by default
-    this.translate.use('ar'); // Load Arabic
+    this.translate.setDefaultLang('ar');
+    this.translate.use('ar');
 
     this.translate.onLangChange.subscribe((event) => {
       this.currentLang = event.lang;

@@ -117,7 +117,7 @@
         <button
           class="service-btn"
           *ngFor="let service of services; trackBy: trackByServiceId"
-          (click)="openWhatsApp(service.message)"
+          (click)="onServiceClick(service)"
         >
           <div class="service-icon">{{ service.icon }}</div>
           <span>{{ service.name }}</span>

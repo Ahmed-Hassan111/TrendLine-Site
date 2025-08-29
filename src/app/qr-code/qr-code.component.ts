@@ -35,10 +35,10 @@ export class QrCodeComponent {
       link: 'https://maps.google.com',
     },
     {
-     label: 'Company<br>Profile',
-     icon: 'assets/icons/web.png',
-     link: 'assets/files/company-profile.pdf',
-     download: true
+      label: 'Company<br>Profile',
+      icon: 'assets/icons/pdf.png',
+      link: 'assets/files/company-profile.pdf',
+      download: true,
     },
     // {
     //   label: 'Email',

@@ -2,12 +2,11 @@
 
 .chatbot-container {
   position: fixed !important;
-  top: 15%;
+  bottom: 85%;
   right: 25px;
-  z-index: 9999;
+  z-index: 9999 !important;
   font-family: "Tajawal", sans-serif;
   direction: rtl;
-  transform: translateY(-50%);
 }
 
 /* Main Chat Button */
