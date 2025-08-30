@@ -1,4 +1,4 @@
-<div class="chatbot-container">
+<div *ngIf="showChatbot" class="chatbot-container">
   <!-- AI Bot Button -->
   <button class="chatbot-btn" (click)="toggleChat()" [class.active]="isOpen">
     <div class="bot-icon" *ngIf="!isOpen">

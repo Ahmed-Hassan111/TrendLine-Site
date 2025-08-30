@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Router } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
+import { Subscription } from 'rxjs';
 import {
   trigger,
   state,
@@ -33,10 +34,12 @@ import {
     ]),
   ],
 })
-export class ChatbotComponent {
+export class ChatbotComponent implements OnInit, OnDestroy {
   isOpen = false;
   isTyping = false;
   phoneNumber = '+96877463736';
+  showChatbot = true; // New flag to control chatbot visibility
+  private routerSubscription: Subscription;
 
   services = [
     {
@@ -59,15 +62,34 @@ export class ChatbotComponent {
     },
     {
       id: 4,
-      name: 'عرض QR Code',
-      message: 'عرض QR Code', // يمكن تستخدمها للتحقق أو تبقي فارغة
+      name: 'الخاص بالشركه QR Code',
+      message: 'عرض QR Code',
       icon: '📱',
     },
   ];
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
+    // Initialize subscription to router events
+    this.routerSubscription = this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        // Check if the current route is '/qr-code'
+        this.showChatbot = event.urlAfterRedirects !== '/qr-code';
+      }
+    });
+  }
+
+  ngOnInit() {
+    // Initial check for the current route
+    this.showChatbot = this.router.url !== '/qr-code';
+  }
+
+  ngOnDestroy() {
+    // Clean up the subscription to prevent memory leaks
+    this.routerSubscription.unsubscribe();
+  }
 
   toggleChat() {
+    if (!this.showChatbot) return; // Prevent toggling if chatbot is hidden
     this.isOpen = !this.isOpen;
     if (this.isOpen) {
       this.simulateTyping();
@@ -81,13 +103,6 @@ export class ChatbotComponent {
     }, 1500);
   }
 
-  // openWhatsApp(message: string) {
-  //   const url = `https://wa.me/${this.phoneNumber}?text=${encodeURIComponent(
-  //     message
-  //   )}`;
-  //   window.open(url, '_blank');
-  //   this.isOpen = false;
-  // }
   onServiceClick(service: any) {
     if (service.id === 4) {
       this.router.navigate(['/qr-code']);
